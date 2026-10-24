@@ -1,0 +1,28 @@
+/* Print Styling for Wedding Gift Flyer Card */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-flyer, #printable-flyer * {
+    visibility: visible;
+  }
+  #printable-flyer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    border: 2px solid #D97706;
+  }
+}
+
+/* Custom Utilities */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
